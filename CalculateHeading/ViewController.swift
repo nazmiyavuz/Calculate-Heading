@@ -22,10 +22,14 @@ class ViewController: UIViewController {
     
     private var magneticComponent: MagneticComponent?
     
+    private var textFieldList: [UITextField] = []
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        textFieldList = [
+            aircraftDirection, aircraftVelocity,
+            windDirection, windVelocity]
     }
     
     // MARK: - Private Functions
@@ -80,10 +84,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearButtonPressed(_ sender: UIBarButtonItem) {
-        aircraftDirection.text = ""
-        aircraftVelocity.text = ""
-        windDirection.text = ""
-        windVelocity.text = ""
+        self.setEditing(false, animated: true)
+        
+        for textField in textFieldList {
+            textField.text = ""
+            textField.resignFirstResponder()
+        }
+        
         resultLabel.text = ""
         self.setEditing(false, animated: true)
     }
