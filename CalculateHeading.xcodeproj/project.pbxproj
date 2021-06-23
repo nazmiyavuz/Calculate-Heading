@@ -13,6 +13,8 @@
 		401FF1DD26835DF2003F1438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401FF1DB26835DF2003F1438 /* Main.storyboard */; };
 		401FF1DF26835DF5003F1438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401FF1DE26835DF5003F1438 /* Assets.xcassets */; };
 		401FF1E226835DF5003F1438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401FF1E026835DF5003F1438 /* LaunchScreen.storyboard */; };
+		401FF1EB268361EC003F1438 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401FF1EA268361EC003F1438 /* Component.swift */; };
+		401FF1ED268364B3003F1438 /* MagneticComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401FF1EC268364B3003F1438 /* MagneticComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		401FF1DE26835DF5003F1438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		401FF1E126835DF5003F1438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		401FF1E326835DF5003F1438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401FF1EA268361EC003F1438 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		401FF1EC268364B3003F1438 /* MagneticComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			children = (
 				401FF1D526835DF2003F1438 /* AppDelegate.swift */,
 				401FF1D726835DF2003F1438 /* SceneDelegate.swift */,
+				401FF1E9268361DC003F1438 /* Model */,
 				401FF1D926835DF2003F1438 /* ViewController.swift */,
 				401FF1DB26835DF2003F1438 /* Main.storyboard */,
 				401FF1DE26835DF5003F1438 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				401FF1E326835DF5003F1438 /* Info.plist */,
 			);
 			path = CalculateHeading;
+			sourceTree = "<group>";
+		};
+		401FF1E9268361DC003F1438 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				401FF1EA268361EC003F1438 /* Component.swift */,
+				401FF1EC268364B3003F1438 /* MagneticComponent.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401FF1ED268364B3003F1438 /* MagneticComponent.swift in Sources */,
 				401FF1DA26835DF2003F1438 /* ViewController.swift in Sources */,
+				401FF1EB268361EC003F1438 /* Component.swift in Sources */,
 				401FF1D626835DF2003F1438 /* AppDelegate.swift in Sources */,
 				401FF1D826835DF2003F1438 /* SceneDelegate.swift in Sources */,
 			);
